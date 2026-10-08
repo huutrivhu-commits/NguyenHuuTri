@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV / Portfolio - Nguyễn Hữu Trí</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'Segoe UI', 'Arial', 'sans-serif'],
+                    },
+                    aspectRatio: {
+                        '3/4': '3 / 4',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Modern Clean Styling & Print Friendly Settings */
+        body {
+            font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+            background-color: #f1f5f9;
+            color: #1e293b;
+        }
+
+        /* Standard A4 Paper Dimensions */
+        .a4-page {
+            width: 100%;
+            max-width: 820px;
+            min-height: 1120px;
+            margin: 2rem auto;
+            background: #ffffff;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+            padding: 2.5rem 3rem;
+        }
+
+        /* Print optimization */
+        @media print {
+            body {
+                background-color: #ffffff;
+            }
+            .a4-page {
+                box-shadow: none;
+                margin: 0;
+                padding: 1.5cm 2cm;
+                width: 100%;
+                max-width: 100%;
+            }
+            .no-print {
+                display: none !important;
+            }
+        }
+
+        /* Underline title accent line */
+        .section-title {
+            position: relative;
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: #0f172a;
+            text-transform: uppercase;
+            padding-bottom: 0.35rem;
+            margin-bottom: 1rem;
+            border-bottom: 1.5px solid #1e293b;
+        }
+    </style>
+</head>
+<body class="antialiased text-slate-800">
+
+    <main class="a4-page">
+        <!-- HEADER: ẢNH CHÂN DUNG 3x4 + THÔNG TIN CÁ NHÂN -->
+        <header class="flex flex-col sm:flex-row gap-6 items-start pb-6 mb-6 border-b border-slate-200">
+            
+            <!-- 📌 VỊ TRÍ THAY ẢNH 3x4 (DÒNG 69) -->
+            <div class="w-32 sm:w-36 aspect-[3/4] bg-slate-100 border border-slate-300 rounded overflow-hidden flex-shrink-0 shadow-sm">
+                <!-- Thay link "anh-3x4.jpg" bằng tên ảnh hoặc link ảnh của bạn vào src="..." bên dưới -->
+                <img src="cv/cv.jpg" alt="Nguyễn Hữu Trí" class="w-full h-full object-cover">
+            </div>
+
+            <!-- Profile Contact Info Details -->
+            <div class="flex-1 space-y-2">
+                <h1 class="text-3xl font-bold text-slate-900 tracking-tight">Nguyễn Hữu Trí</h1>
+                <p class="text-lg font-semibold text-slate-700 pb-2">Chuyên Viên An Toàn Thông Tin</p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-1 gap-y-1.5 text-sm text-slate-700">
+                    <div><span class="font-bold text-slate-900 w-24 inline-block">Ngày sinh:</span> 02/10/2005</div>
+                    <div><span class="font-bold text-slate-900 w-24 inline-block">Giới tính:</span> Nam</div>
+                    <div><span class="font-bold text-slate-900 w-24 inline-block">Số điện thoại:</span> 0347101706</div>
+                    <div><span class="font-bold text-slate-900 w-24 inline-block">Email:</span> huutrivhu@gmail.com</div>
+                    <div><span class="font-bold text-slate-900 w-24 inline-block">Địa chỉ:</span> Quận 11, TPHCM</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- SECTION 1: MỤC TIÊU NGHỀ NGHIỆP -->
+        <section class="mb-6">
+            <h2 class="section-title">MỤC TIÊU NGHỀ NGHIỆP</h2>
+            <p class="text-sm leading-relaxed text-slate-700 text-justify">
+                Là sinh viên chuyên ngành An toàn thông tin, tôi mong muốn được áp dụng kiến thức đã học vào môi trường làm việc thực tế, đồng thời không ngừng học hỏi và nâng cao kỹ năng chuyên môn. Mục tiêu của tôi là phát triển bản thân trong lĩnh vực an toàn thông tin và trở thành một chuyên viên có năng lực trong tương lai.
+            </p>
+        </section>
+
+        <!-- SECTION 2: HỌC VẤN -->
+        <section class="mb-6">
+            <h2 class="section-title">HỌC VẤN</h2>
+            <div class="flex flex-col sm:flex-row gap-2 sm:gap-6 items-start">
+                <div class="w-28 text-sm font-semibold text-slate-700 flex-shrink-0">
+                    2023 - 2027
+                </div>
+                <div class="flex-1 space-y-1 text-sm text-slate-700">
+                    <p class="font-bold text-slate-900 text-base">Trường Đại học Văn Hiến</p>
+                    <p class="font-semibold text-slate-800">Chuyên ngành: An Toàn Thông Tin</p>
+                    <ul class="list-disc list-inside space-y-1 pt-1 pl-1 text-slate-700">
+                        <li><span class="font-medium">Xếp loại:</span> Khá - GPA: 3.0/4.0</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: KỸ NĂNG -->
+        <section class="mb-6">
+            <h2 class="section-title">KỸ NĂNG</h2>
+            <div class="space-y-2.5 text-sm text-slate-700">
+                <div class="flex flex-col sm:flex-row sm:items-start">
+                    <span class="font-bold text-slate-900 sm:w-44 flex-shrink-0">Kỹ năng chuyên môn:</span>
+                    <span class="flex-1">Lập trình cơ bản: Java, C++, Python; Hệ điều hành; Cơ sở dữ liệu; Kiến thức mạng: TCP/IP, DNS, HTTP/HTTPS, mô hình OSI.</span>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:items-start">
+                    <span class="font-bold text-slate-900 sm:w-44 flex-shrink-0">Kỹ năng mềm:</span>
+                    <span class="flex-1">Giao tiếp hiệu quả, Làm việc nhóm, Giải quyết vấn đề.</span>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:items-start">
+                    <span class="font-bold text-slate-900 sm:w-44 flex-shrink-0">Tin học & Ngoại ngữ:</span>
+                    <span class="flex-1">Tiếng Anh giao tiếp cơ bản, MS Word & Excel, Google Workspace</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: SỞ THÍCH -->
+        <section class="mb-4">
+            <h2 class="section-title">SỞ THÍCH</h2>
+            <ul class="list-disc list-inside space-y-1.5 text-sm text-slate-700">
+                <li>Thể thao: Chơi bóng đá, video game.</li>
+                <li>Tham gia các hoạt động custom về thể thao điện tử, giải đấu cộng đồng.</li>
+            </ul>
+        </section>
+
+    </main>
+
+</body>
+</html>
